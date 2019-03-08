@@ -58,7 +58,6 @@ if __name__ == "__main__":
 	args = parser.parse_args()
 	while True:
 		sen = input("Enter sentence to translate: ")
-		sen = ['hello', 'goodbye']
 		translation = translate(args.api_key,sen, args.language_from, args.language_to)
 		for i in translation:
 			print(i)
